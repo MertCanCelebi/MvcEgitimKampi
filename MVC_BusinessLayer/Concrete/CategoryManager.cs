@@ -1,4 +1,6 @@
-﻿using MVC_DataAccessLayer.Concrete.Repositories;
+﻿using MVC_BusinessLayer.Abstract;
+using MVC_DataAccessLayer.Abstract;
+using MVC_DataAccessLayer.Concrete.Repositories;
 using MVC_EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -8,25 +10,38 @@ using System.Threading.Tasks;
 
 namespace MVC_BusinessLayer.Concrete
 {
-    public class CategoryManager
+    public class CategoryManager : ICategoryService
     {
-        GenericRepository<Category> repo = new GenericRepository<Category>();
+        ICategoryDal _categoryDal;
 
-        public List<Category> GetAllBl()
+        public CategoryManager(ICategoryDal categoryDal)
         {
-            return repo.List();
+            _categoryDal = categoryDal;
         }
-        public void CategoryAddBl(Category p)
+
+        public void CategoryAddBl(Category category)
         {
-            if(p.CategoryName == "" || p.CategoryName.Length > 50)
-            {
-                //hata mesajı yazılacak
-            }
-            else
-            {
-                repo.Insert(p);
-                
-            }
+            _categoryDal.Insert(category);
+        }
+
+        public void CategoryDeleteBl(Category category)
+        {
+            _categoryDal.Delete(category);
+        }
+
+        public void CategoryUpdateBl(Category category)
+        {
+            _categoryDal.Update(category);
+        }
+
+        public Category GetById(int id)
+        {
+            return _categoryDal.Get(x=>x.CategoryId == id);
+        }
+
+        public List<Category> GetList()
+        {
+            return _categoryDal.List();
         }
     }
 }
