@@ -1,0 +1,12 @@
+C:\Users\MERT\source\repos\MVC_EntityLayer\bin\Debug\MVC_EntityLayer.dll.config
+C:\Users\MERT\source\repos\MVC_EntityLayer\bin\Debug\MVC_EntityLayer.dll
+C:\Users\MERT\source\repos\MVC_EntityLayer\bin\Debug\MVC_EntityLayer.pdb
+C:\Users\MERT\source\repos\MVC_EntityLayer\bin\Debug\EntityFramework.dll
+C:\Users\MERT\source\repos\MVC_EntityLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MERT\source\repos\MVC_EntityLayer\bin\Debug\EntityFramework.xml
+C:\Users\MERT\source\repos\MVC_EntityLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MERT\source\repos\MVC_EntityLayer\obj\Debug\MVC_EntityLayer.csproj.AssemblyReference.cache
+C:\Users\MERT\source\repos\MVC_EntityLayer\obj\Debug\MVC_EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\MERT\source\repos\MVC_EntityLayer\obj\Debug\MVC_Enti.DBA61CC5.Up2Date
+C:\Users\MERT\source\repos\MVC_EntityLayer\obj\Debug\MVC_EntityLayer.dll
+C:\Users\MERT\source\repos\MVC_EntityLayer\obj\Debug\MVC_EntityLayer.pdb
