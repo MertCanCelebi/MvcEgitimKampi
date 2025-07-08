@@ -56,6 +56,8 @@
     <Compile Include="Abstract\IContactDal.cs" />
     <Compile Include="Abstract\IContentDal.cs" />
     <Compile Include="Abstract\IHeadingDal.cs" />
+    <Compile Include="Abstract\IImageFileDal.cs" />
+    <Compile Include="Abstract\IMessageDal.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IWriterDal.cs" />
     <Compile Include="Concrete\Context.cs" />
@@ -66,6 +68,8 @@
     <Compile Include="EntityFramework\EfContactDal.cs" />
     <Compile Include="EntityFramework\EfContentDal.cs" />
     <Compile Include="EntityFramework\EfHeadingDal.cs" />
+    <Compile Include="EntityFramework\EfImageFileDal.cs" />
+    <Compile Include="EntityFramework\EfMessageDal.cs" />
     <Compile Include="EntityFramework\EfWriterDal.cs" />
     <Compile Include="Migrations\202506280619307_mig1.cs" />
     <Compile Include="Migrations\202506280619307_mig1.Designer.cs">
@@ -74,6 +78,54 @@
     <Compile Include="Migrations\202506280639307_mig2.cs" />
     <Compile Include="Migrations\202506280639307_mig2.Designer.cs">
       <DependentUpon>202506280639307_mig2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506300838508_mig_writer.cs" />
+    <Compile Include="Migrations\202506300838508_mig_writer.Designer.cs">
+      <DependentUpon>202506300838508_mig_writer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506301218111_writer2.cs" />
+    <Compile Include="Migrations\202506301218111_writer2.Designer.cs">
+      <DependentUpon>202506301218111_writer2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202506301442158_writer3.cs" />
+    <Compile Include="Migrations\202506301442158_writer3.Designer.cs">
+      <DependentUpon>202506301442158_writer3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202507010628485_writer31.cs" />
+    <Compile Include="Migrations\202507010628485_writer31.Designer.cs">
+      <DependentUpon>202507010628485_writer31.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202507011044040_content1.cs" />
+    <Compile Include="Migrations\202507011044040_content1.Designer.cs">
+      <DependentUpon>202507011044040_content1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202507011053005_heading1.cs" />
+    <Compile Include="Migrations\202507011053005_heading1.Designer.cs">
+      <DependentUpon>202507011053005_heading1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202507011814273_about1.cs" />
+    <Compile Include="Migrations\202507011814273_about1.Designer.cs">
+      <DependentUpon>202507011814273_about1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202507021738149_addMessage.cs" />
+    <Compile Include="Migrations\202507021738149_addMessage.Designer.cs">
+      <DependentUpon>202507021738149_addMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202507021801315_Message1.cs" />
+    <Compile Include="Migrations\202507021801315_Message1.Designer.cs">
+      <DependentUpon>202507021801315_Message1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202507071822591_imagefiles.cs" />
+    <Compile Include="Migrations\202507071822591_imagefiles.Designer.cs">
+      <DependentUpon>202507071822591_imagefiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202507071909260_admin.cs" />
+    <Compile Include="Migrations\202507071909260_admin.Designer.cs">
+      <DependentUpon>202507071909260_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202507081155386_contactadddate.cs" />
+    <Compile Include="Migrations\202507081155386_contactadddate.Designer.cs">
+      <DependentUpon>202507081155386_contactadddate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -94,6 +146,42 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202506280639307_mig2.resx">
       <DependentUpon>202506280639307_mig2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506300838508_mig_writer.resx">
+      <DependentUpon>202506300838508_mig_writer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506301218111_writer2.resx">
+      <DependentUpon>202506301218111_writer2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202506301442158_writer3.resx">
+      <DependentUpon>202506301442158_writer3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202507010628485_writer31.resx">
+      <DependentUpon>202507010628485_writer31.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202507011044040_content1.resx">
+      <DependentUpon>202507011044040_content1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202507011053005_heading1.resx">
+      <DependentUpon>202507011053005_heading1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202507011814273_about1.resx">
+      <DependentUpon>202507011814273_about1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202507021738149_addMessage.resx">
+      <DependentUpon>202507021738149_addMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202507021801315_Message1.resx">
+      <DependentUpon>202507021801315_Message1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202507071822591_imagefiles.resx">
+      <DependentUpon>202507071822591_imagefiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202507071909260_admin.resx">
+      <DependentUpon>202507071909260_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202507081155386_contactadddate.resx">
+      <DependentUpon>202507081155386_contactadddate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
