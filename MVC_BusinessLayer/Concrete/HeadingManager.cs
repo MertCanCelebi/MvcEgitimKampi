@@ -35,7 +35,15 @@ namespace MVC_BusinessLayer.Concrete
 
         public void HeadingDeleteBl(Heading heading)
         {
-            _headingDal.Delete(heading);
+            if (heading.HeadingStatus == true)
+            {
+                heading.HeadingStatus = false;
+            }
+            else
+            {
+                heading.HeadingStatus = true;
+            }
+            _headingDal.Update(heading);
         }
 
         public void HeadingUpdateBl(Heading heading)
