@@ -1,0 +1,34 @@
+﻿@model MVC_EntityLayer.Concrete.Heading
+@{
+    ViewBag.Title = "UpdateHeading";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Başlık Düzenle</h2>
+
+@using (Html.BeginForm("UpdateHeading", "Heading", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.Label("Başlık Id")
+        @Html.TextBoxFor(x => x.HeadingId, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.HeadingId)
+        <br />
+        @Html.Label("Başlık Adı")
+        @Html.TextBoxFor(x => x.HeadingName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.HeadingName)
+        <br />
+        @Html.Label("Tarih")
+        @Html.TextBoxFor(x => x.HeadingDate, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.HeadingDate)
+        <br />
+        @Html.Label("Yazar Adı")
+        @Html.TextBoxFor(x => x.WriterId, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.WriterId)
+        <br />
+        @Html.Label("Kategori Adı")
+        @Html.DropDownListFor(x => x.CategoryId, (List<SelectListItem>)ViewBag.vlc, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.CategoryId)
+        <br />
+        <button class="btn btn-primary">Güncelle</button>
+    </div>
+}

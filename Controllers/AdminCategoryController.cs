@@ -16,6 +16,7 @@ namespace MvcEgitimKampi.Controllers
     {
         // GET: AdminCategory
         CategoryManager cm = new CategoryManager(new EfCategoryDal());
+        [Authorize(Roles ="B")]
         public ActionResult Index()
         {
             var degerler = cm.GetList();
@@ -56,6 +57,12 @@ namespace MvcEgitimKampi.Controllers
         {
             var category = cm.GetById(id);
             return View(category);
+        }
+        [HttpPost]
+        public ActionResult UpdateCategory(Category category)
+        {
+            cm.CategoryUpdateBl(category);
+            return RedirectToAction("Index");
         }
     }
 }
