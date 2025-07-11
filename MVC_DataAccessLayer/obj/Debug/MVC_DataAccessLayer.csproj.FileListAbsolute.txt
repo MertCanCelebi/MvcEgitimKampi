@@ -16,3 +16,15 @@ C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.pdb
 C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.mig1.resources
 C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.csproj.GenerateResource.cache
 C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.mig2.resources
+C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.mig_writer.resources
+C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.writer2.resources
+C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.writer3.resources
+C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.writer31.resources
+C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.content1.resources
+C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.heading1.resources
+C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.about1.resources
+C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.addMessage.resources
+C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.Message1.resources
+C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.imagefiles.resources
+C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.admin.resources
+C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.contactadddate.resources
