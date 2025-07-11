@@ -28,3 +28,4 @@ C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Mig
 C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.imagefiles.resources
 C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.admin.resources
 C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.contactadddate.resources
+C:\Users\MERT\source\repos\MVC_DataAccessLayer\obj\Debug\MVC_DataAccessLayer.Migrations.addtalent.resources
