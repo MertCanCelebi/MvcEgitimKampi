@@ -12,13 +12,13 @@ namespace MVC_BusinessLayer.ValidationRules
     {
         public MessageValidator()
         {
-            RuleFor(x => x.SenderMail).NotEmpty().WithMessage("Boş Geçemezsiniz");
-            RuleFor(x => x.ReciverMail).NotEmpty().WithMessage("Boş Geçemezsiniz");
-            RuleFor(x => x.Subject).NotEmpty().WithMessage("Boş Geçemezsiniz");
-            RuleFor(x => x.MessageContent).NotEmpty().WithMessage("Boş Geçemezsiniz");
-            RuleFor(x => x.MessageContent).MinimumLength(3).WithMessage("3 karakterden az giriş yapamazsınız");
-            RuleFor(x => x.Subject).MinimumLength(3).WithMessage("3 karakterden az giriş yapamazsınız");
-             RuleFor(x => x.Subject).MaximumLength(50).WithMessage("50 karakterden fazla giriş yapamazsınız");
+
+            RuleFor(x => x.ReciverMail).NotEmpty().WithMessage("Alıcı adresini boş geçemezsiniz");
+            RuleFor(x => x.Subject).NotEmpty().WithMessage("Konuyu boş geçemezsiniz");
+            RuleFor(x => x.MessageContent).NotEmpty().WithMessage("Mesajı boş geçemezsiniz");
+
+            RuleFor(x => x.Subject).MinimumLength(3).WithMessage("Lütfen en az 3 karakter girişi yapın");
+            RuleFor(x => x.Subject).MaximumLength(100).WithMessage("Lütfen 100 karakterten fazla değer girişi yapmayın");
         }
      
     }

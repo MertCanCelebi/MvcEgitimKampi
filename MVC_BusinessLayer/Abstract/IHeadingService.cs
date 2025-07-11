@@ -10,6 +10,7 @@ namespace MVC_BusinessLayer.Abstract
     public interface IHeadingService
     {
         List<Heading> GetList();
+        List<Heading> GetListByWriter(int id);
         void HeadingAddBl(Heading heading);
         Heading GetById(int id);
         void HeadingDeleteBl(Heading heading);
