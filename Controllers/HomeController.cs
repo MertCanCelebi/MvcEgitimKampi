@@ -26,5 +26,10 @@ namespace MvcEgitimKampi.Controllers
 
             return View();
         }
+        [AllowAnonymous]
+        public ActionResult HomePage()
+        {
+            return View();
+        }
     }
 }

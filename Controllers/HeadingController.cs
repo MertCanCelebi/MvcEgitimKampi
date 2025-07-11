@@ -23,6 +23,12 @@ namespace MvcEgitimKampi.Controllers
             var degerler = hm.GetList();
             return View(degerler);
         }
+        public ActionResult HeadingReport()
+        {
+            var headingvalues = hm.GetList();
+            return View(headingvalues);
+        }
+
         [HttpGet]
         public ActionResult AddHeading()
         {

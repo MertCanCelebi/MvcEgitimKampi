@@ -16,14 +16,14 @@ namespace MvcEgitimKampi.Controllers
         // GET: Message
         MessageManager mm = new MessageManager(new EfMessageDal());
         MessageValidator messageValidator = new MessageValidator();
-        public ActionResult Inbox()
+        public ActionResult Inbox(string p)
         {
-            var degerler = mm.GetListInbox();
+            var degerler = mm.GetListInbox(p);
             return View(degerler);
         }
-        public ActionResult Sendbox()
+        public ActionResult Sendbox(string p)
         {
-            var degerler2 = mm.GetListSendbox();
+            var degerler2 = mm.GetListSendbox(p);
             return View(degerler2);
         }
         public ActionResult GetInboxMessageDetails(int id)
@@ -44,7 +44,7 @@ namespace MvcEgitimKampi.Controllers
         [HttpPost]
         public ActionResult AddMessage(Message m)
         {
-            
+            m.SenderMail = "admin@gmail.com";
             ValidationResult validationResult = messageValidator.Validate(m);
             if (validationResult.IsValid)
             {

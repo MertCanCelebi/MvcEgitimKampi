@@ -51,7 +51,7 @@
                             <!-- /.card-header -->
                             <div class="card-body">
                                 <div class="form-group">
-                                    @Html.Label("Alıcı")
+                                    @Html.Label("Alıcı Adı")
                                     @Html.TextBoxFor(x => x.ReciverMail, new { @class = "form-control" })
                                     @Html.ValidationMessageFor(x => x.ReciverMail)
                                 </div>
@@ -61,11 +61,10 @@
                                     @Html.ValidationMessageFor(x => x.Subject)
                                 </div>
                                 <div class="form-group">
-                                    <div class="form-group">
-                                        @Html.Label("Mesaj")
-                                        @Html.TextAreaFor(x => x.MessageContent, new { @class = "form-control", @id = "compose-textarea", style = "height:300px" })
-                                        @Html.ValidationMessageFor(x => x.MessageContent)
-                                    </div>
+                                    @Html.Label("Mesajınız")
+                                    <textarea id="compose-textarea" name="MessageContent" class="form-control" style="height: 300px">
+
+             </textarea>
                                 </div>
                                 <div class="form-group">
                                     <div class="btn btn-default btn-file">
@@ -78,13 +77,14 @@
                             <!-- /.card-body -->
                             <div class="card-footer">
                                 <div class="float-right">
-                                    <button type="button" class="btn btn-default"><i class="fas fa-pencil-alt"></i> Taslaklara At</button>
-                                    <button type="submit" class="btn btn-primary"><i class="far fa-envelope"></i> Gönder</button>
+                                    <button type="button" class="btn btn-default"><i class="fas fa-pencil-alt"></i> Taslaklara Kaydet</button>
+                                    <button type="submit" class="btn btn-primary"><i class="far fa-envelope"></i> Gönder </button>
                                 </div>
                                 <button type="reset" class="btn btn-default"><i class="fas fa-times"></i> İptal Et</button>
                             </div>
                             <!-- /.card-footer -->
                         </div>
+                        <!-- /.card -->
                     }
                     <!-- /.card -->
                 </div>
